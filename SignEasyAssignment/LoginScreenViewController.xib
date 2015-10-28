@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginScreenViewController">
+            <connections>
+                <outlet property="loginBtn" destination="ERX-6p-7Zb" id="dS9-vb-JoL"/>
+                <outlet property="passwordTextfield" destination="jGB-ry-9Jw" id="g4M-Ys-Kjt"/>
+                <outlet property="usernameTextfield" destination="Efp-LN-Hvd" id="fT8-SK-Hbt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blurredScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZqI-Uj-VaB">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Efp-LN-Hvd">
+                    <rect key="frame" x="24" y="132" width="552" height="30"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="4Ql-xG-ofv"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" keyboardType="alphabet" keyboardAppearance="light" returnKeyType="next"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jGB-ry-9Jw">
+                    <rect key="frame" x="24" y="175" width="552" height="30"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Cfx-CD-pmM"/>
+                        <constraint firstAttribute="height" constant="30" id="vhs-er-C9w"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" keyboardType="alphabet" keyboardAppearance="light" returnKeyType="done"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Cfx-CD-pmM"/>
+                        </mask>
+                    </variation>
+                </textField>
+                <textView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" keyboardDismissMode="interactive" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XmW-VX-hMu">
+                    <rect key="frame" x="8" y="297" width="584" height="115"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="115" id="ifR-K5-3Yx"/>
+                    </constraints>
+                    <mutableString key="text">Lorem ipsum dolor sit er elit lamet, con sectetaur cillium adip isicing pecu, sed do eius mod tempor incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERX-6p-7Zb">
+                    <rect key="frame" x="0.0" y="562" width="600" height="38"/>
+                    <color key="backgroundColor" red="0.83242567300000003" green="0.44408910629999998" blue="0.1045095097" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="sP8-2m-pAC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="24"/>
+                    <state key="normal" title="Login">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loginClicked:" destination="-1" eventType="touchUpInside" id="0dv-4a-QVS"/>
+                    </connections>
+                </button>
+                <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xsr-Ey-olb">
+                    <rect key="frame" x="24" y="255" width="552" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="Vsy-mu-Ovz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ERX-6p-7Zb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0Ed-Lx-CBP"/>
+                <constraint firstItem="Efp-LN-Hvd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="27" id="2K7-Hr-lI7"/>
+                <constraint firstItem="ZqI-Uj-VaB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5RN-TE-yWi"/>
+                <constraint firstItem="jGB-ry-9Jw" firstAttribute="top" secondItem="Efp-LN-Hvd" secondAttribute="bottom" constant="13" id="7ZY-FY-FzK"/>
+                <constraint firstAttribute="bottom" secondItem="ERX-6p-7Zb" secondAttribute="bottom" id="9OS-nn-uo8"/>
+                <constraint firstAttribute="trailing" secondItem="ZqI-Uj-VaB" secondAttribute="trailing" id="9yA-ud-Vct"/>
+                <constraint firstItem="XmW-VX-hMu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AKH-bz-fjS"/>
+                <constraint firstItem="Xsr-Ey-olb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AXv-Sh-jhu"/>
+                <constraint firstItem="ZqI-Uj-VaB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="C7i-VJ-vwP"/>
+                <constraint firstItem="Efp-LN-Hvd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DDQ-d5-bMY"/>
+                <constraint firstItem="XmW-VX-hMu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="DSv-el-9xA"/>
+                <constraint firstItem="Efp-LN-Hvd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Exh-0B-PTQ"/>
+                <constraint firstItem="Efp-LN-Hvd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="FKL-kZ-owy"/>
+                <constraint firstAttribute="bottom" secondItem="ZqI-Uj-VaB" secondAttribute="bottom" id="HxT-0v-sdd"/>
+                <constraint firstItem="Efp-LN-Hvd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="132" id="IoZ-Gk-bKf"/>
+                <constraint firstAttribute="trailing" secondItem="XmW-VX-hMu" secondAttribute="trailing" constant="8" id="JZF-UE-0xf"/>
+                <constraint firstAttribute="trailing" secondItem="Xsr-Ey-olb" secondAttribute="trailing" constant="24" id="LiU-wF-x7q"/>
+                <constraint firstAttribute="trailing" secondItem="Efp-LN-Hvd" secondAttribute="trailing" constant="35" id="MuN-LA-LVb"/>
+                <constraint firstAttribute="trailing" secondItem="Efp-LN-Hvd" secondAttribute="trailing" constant="24" id="Q2o-Li-SnU"/>
+                <constraint firstAttribute="trailing" secondItem="ERX-6p-7Zb" secondAttribute="trailing" id="U9Q-dV-s8V"/>
+                <constraint firstItem="Xsr-Ey-olb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="WhJ-oR-cPM"/>
+                <constraint firstItem="jGB-ry-9Jw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="c8V-hC-FgU"/>
+                <constraint firstItem="Xsr-Ey-olb" firstAttribute="top" secondItem="jGB-ry-9Jw" secondAttribute="bottom" constant="50" id="eRi-WB-CpU"/>
+                <constraint firstItem="Efp-LN-Hvd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="132" id="fba-bq-Jla"/>
+                <constraint firstItem="ZqI-Uj-VaB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iCE-aI-WS4"/>
+                <constraint firstAttribute="trailing" secondItem="jGB-ry-9Jw" secondAttribute="trailing" constant="24" id="kF1-V6-G1M"/>
+                <constraint firstItem="XmW-VX-hMu" firstAttribute="top" secondItem="Xsr-Ey-olb" secondAttribute="bottom" constant="8" id="oL2-Zi-XVP"/>
+                <constraint firstAttribute="bottom" secondItem="ERX-6p-7Zb" secondAttribute="bottom" id="twu-j6-Ckg"/>
+                <constraint firstItem="jGB-ry-9Jw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uA2-1Z-gVp"/>
+                <constraint firstItem="ERX-6p-7Zb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vL1-gM-arv"/>
+                <constraint firstItem="ZqI-Uj-VaB" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="vhe-R3-ccg"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="2K7-Hr-lI7"/>
+                    <exclude reference="Exh-0B-PTQ"/>
+                    <exclude reference="MuN-LA-LVb"/>
+                    <exclude reference="fba-bq-Jla"/>
+                    <exclude reference="twu-j6-Ckg"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="blurredScreen.png" width="1080" height="1925"/>
+    </resources>
+</document>

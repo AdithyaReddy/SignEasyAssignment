@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DocumentsViewController">
+            <connections>
+                <outlet property="searchBar" destination="SN0-K8-JPc" id="BBB-ef-Eth"/>
+                <outlet property="searchbarDistanceFromTop" destination="DZz-Bh-aCb" id="0xZ-fH-CoT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="SN0-K8-JPc">
+                    <rect key="frame" x="0.0" y="44" width="600" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="xnm-nt-y0H"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="SN0-K8-JPc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="DZz-Bh-aCb"/>
+                <constraint firstItem="SN0-K8-JPc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Tox-1u-wRW"/>
+                <constraint firstAttribute="trailing" secondItem="SN0-K8-JPc" secondAttribute="trailing" id="Z4A-1S-K6b"/>
+                <constraint firstItem="SN0-K8-JPc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aJP-M4-mF6"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

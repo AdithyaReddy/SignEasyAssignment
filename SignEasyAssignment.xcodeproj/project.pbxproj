@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46F070929AC0BC6A5C5BCD0A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1EE5874C76ED20075608B6 /* libPods.a */; };
 		845A1D7D1BDEA850001986B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A1D7C1BDEA850001986B0 /* main.m */; };
 		845A1D801BDEA850001986B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A1D7F1BDEA850001986B0 /* AppDelegate.m */; };
-		845A1D831BDEA850001986B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A1D821BDEA850001986B0 /* ViewController.m */; };
-		845A1D861BDEA850001986B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845A1D841BDEA850001986B0 /* Main.storyboard */; };
 		845A1D881BDEA850001986B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845A1D871BDEA850001986B0 /* Assets.xcassets */; };
 		845A1D8B1BDEA850001986B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845A1D891BDEA850001986B0 /* LaunchScreen.storyboard */; };
 		845A1D961BDEA850001986B0 /* SignEasyAssignmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A1D951BDEA850001986B0 /* SignEasyAssignmentTests.m */; };
 		845A1DA11BDEA850001986B0 /* SignEasyAssignmentUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A1DA01BDEA850001986B0 /* SignEasyAssignmentUITests.m */; };
+		845A1DB11BDEA93F001986B0 /* blurredScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 845A1DB01BDEA93F001986B0 /* blurredScreen.png */; settings = {ASSET_TAGS = (); }; };
+		845A1DB51BDEAF12001986B0 /* LoginScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A1DB31BDEAF12001986B0 /* LoginScreenViewController.m */; settings = {ASSET_TAGS = (); }; };
+		845A1DB61BDEAF12001986B0 /* LoginScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845A1DB41BDEAF12001986B0 /* LoginScreenViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		845A1DB91BDEBEB2001986B0 /* UIColor+ColorFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A1DB81BDEBEB2001986B0 /* UIColor+ColorFunctions.m */; settings = {ASSET_TAGS = (); }; };
+		845A1DBD1BDEC826001986B0 /* DocumentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A1DBB1BDEC826001986B0 /* DocumentsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		845A1DBE1BDEC826001986B0 /* DocumentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845A1DBC1BDEC826001986B0 /* DocumentsViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		845A1DC11BDFFF14001986B0 /* LoginAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A1DC01BDFFF14001986B0 /* LoginAuthentication.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,13 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A1EE5874C76ED20075608B6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		845A1D781BDEA850001986B0 /* SignEasyAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignEasyAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845A1D7C1BDEA850001986B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		845A1D7E1BDEA850001986B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		845A1D7F1BDEA850001986B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		845A1D811BDEA850001986B0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		845A1D821BDEA850001986B0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		845A1D851BDEA850001986B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		845A1D7E1BDEA850001986B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = SignEasyAssignment/AppDelegate.h; sourceTree = "<group>"; };
+		845A1D7F1BDEA850001986B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = SignEasyAssignment/AppDelegate.m; sourceTree = "<group>"; };
 		845A1D871BDEA850001986B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		845A1D8A1BDEA850001986B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		845A1D8C1BDEA850001986B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +55,19 @@
 		845A1D9C1BDEA850001986B0 /* SignEasyAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignEasyAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		845A1DA01BDEA850001986B0 /* SignEasyAssignmentUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignEasyAssignmentUITests.m; sourceTree = "<group>"; };
 		845A1DA21BDEA850001986B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845A1DB01BDEA93F001986B0 /* blurredScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blurredScreen.png; sourceTree = "<group>"; };
+		845A1DB21BDEAF12001986B0 /* LoginScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginScreenViewController.h; sourceTree = "<group>"; };
+		845A1DB31BDEAF12001986B0 /* LoginScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginScreenViewController.m; sourceTree = "<group>"; };
+		845A1DB41BDEAF12001986B0 /* LoginScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginScreenViewController.xib; sourceTree = "<group>"; };
+		845A1DB71BDEBEB2001986B0 /* UIColor+ColorFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorFunctions.h"; sourceTree = "<group>"; };
+		845A1DB81BDEBEB2001986B0 /* UIColor+ColorFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorFunctions.m"; sourceTree = "<group>"; };
+		845A1DBA1BDEC826001986B0 /* DocumentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentsViewController.h; sourceTree = "<group>"; };
+		845A1DBB1BDEC826001986B0 /* DocumentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentsViewController.m; sourceTree = "<group>"; };
+		845A1DBC1BDEC826001986B0 /* DocumentsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DocumentsViewController.xib; sourceTree = "<group>"; };
+		845A1DBF1BDFFF14001986B0 /* LoginAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginAuthentication.h; path = ../LoginAuthentication.h; sourceTree = "<group>"; };
+		845A1DC01BDFFF14001986B0 /* LoginAuthentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginAuthentication.m; path = ../LoginAuthentication.m; sourceTree = "<group>"; };
+		8BFE055876DFF3E955638268 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D97DE540B568C7FF53987FE3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46F070929AC0BC6A5C5BCD0A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +96,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		147A6DC4B70F5155C5EEC7E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D97DE540B568C7FF53987FE3 /* Pods.debug.xcconfig */,
+				8BFE055876DFF3E955638268 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		59C0A5B582E75DA359D6EF92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A1EE5874C76ED20075608B6 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		845A1D6F1BDEA850001986B0 = {
 			isa = PBXGroup;
 			children = (
+				845A1D7E1BDEA850001986B0 /* AppDelegate.h */,
+				845A1D7F1BDEA850001986B0 /* AppDelegate.m */,
 				845A1D7A1BDEA850001986B0 /* SignEasyAssignment */,
 				845A1D941BDEA850001986B0 /* SignEasyAssignmentTests */,
 				845A1D9F1BDEA850001986B0 /* SignEasyAssignmentUITests */,
 				845A1D791BDEA850001986B0 /* Products */,
+				147A6DC4B70F5155C5EEC7E7 /* Pods */,
+				59C0A5B582E75DA359D6EF92 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,15 +140,17 @@
 		845A1D7A1BDEA850001986B0 /* SignEasyAssignment */ = {
 			isa = PBXGroup;
 			children = (
-				845A1D7E1BDEA850001986B0 /* AppDelegate.h */,
-				845A1D7F1BDEA850001986B0 /* AppDelegate.m */,
-				845A1D811BDEA850001986B0 /* ViewController.h */,
-				845A1D821BDEA850001986B0 /* ViewController.m */,
-				845A1D841BDEA850001986B0 /* Main.storyboard */,
 				845A1D871BDEA850001986B0 /* Assets.xcassets */,
+				845A1DB01BDEA93F001986B0 /* blurredScreen.png */,
 				845A1D891BDEA850001986B0 /* LaunchScreen.storyboard */,
 				845A1D8C1BDEA850001986B0 /* Info.plist */,
+				845A1D7C1BDEA850001986B0 /* main.m */,
 				845A1D7B1BDEA850001986B0 /* Supporting Files */,
+				845A1DB21BDEAF12001986B0 /* LoginScreenViewController.h */,
+				845A1DB31BDEAF12001986B0 /* LoginScreenViewController.m */,
+				845A1DB41BDEAF12001986B0 /* LoginScreenViewController.xib */,
+				845A1DB71BDEBEB2001986B0 /* UIColor+ColorFunctions.h */,
+				845A1DB81BDEBEB2001986B0 /* UIColor+ColorFunctions.m */,
 			);
 			path = SignEasyAssignment;
 			sourceTree = "<group>";
@@ -117,7 +158,11 @@
 		845A1D7B1BDEA850001986B0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				845A1D7C1BDEA850001986B0 /* main.m */,
+				845A1DBF1BDFFF14001986B0 /* LoginAuthentication.h */,
+				845A1DC01BDFFF14001986B0 /* LoginAuthentication.m */,
+				845A1DBA1BDEC826001986B0 /* DocumentsViewController.h */,
+				845A1DBB1BDEC826001986B0 /* DocumentsViewController.m */,
+				845A1DBC1BDEC826001986B0 /* DocumentsViewController.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -147,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 845A1DA51BDEA850001986B0 /* Build configuration list for PBXNativeTarget "SignEasyAssignment" */;
 			buildPhases = (
+				497438DF32C43A606918B8DE /* Check Pods Manifest.lock */,
 				845A1D741BDEA850001986B0 /* Sources */,
 				845A1D751BDEA850001986B0 /* Frameworks */,
 				845A1D761BDEA850001986B0 /* Resources */,
+				89ED465FBD3EA13B53012DEF /* Embed Pods Frameworks */,
+				AB0518F65A6D723F5B94DA42 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,9 +291,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845A1DBE1BDEC826001986B0 /* DocumentsViewController.xib in Resources */,
+				845A1DB11BDEA93F001986B0 /* blurredScreen.png in Resources */,
 				845A1D8B1BDEA850001986B0 /* LaunchScreen.storyboard in Resources */,
+				845A1DB61BDEAF12001986B0 /* LoginScreenViewController.xib in Resources */,
 				845A1D881BDEA850001986B0 /* Assets.xcassets in Resources */,
-				845A1D861BDEA850001986B0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,14 +315,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		497438DF32C43A606918B8DE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		89ED465FBD3EA13B53012DEF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB0518F65A6D723F5B94DA42 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		845A1D741BDEA850001986B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				845A1D831BDEA850001986B0 /* ViewController.m in Sources */,
 				845A1D801BDEA850001986B0 /* AppDelegate.m in Sources */,
 				845A1D7D1BDEA850001986B0 /* main.m in Sources */,
+				845A1DB51BDEAF12001986B0 /* LoginScreenViewController.m in Sources */,
+				845A1DB91BDEBEB2001986B0 /* UIColor+ColorFunctions.m in Sources */,
+				845A1DBD1BDEC826001986B0 /* DocumentsViewController.m in Sources */,
+				845A1DC11BDFFF14001986B0 /* LoginAuthentication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,14 +409,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		845A1D841BDEA850001986B0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				845A1D851BDEA850001986B0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		845A1D891BDEA850001986B0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -411,9 +504,11 @@
 		};
 		845A1DA61BDEA850001986B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D97DE540B568C7FF53987FE3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SignEasyAssignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FranklyMe.SignEasyAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,9 +517,11 @@
 		};
 		845A1DA71BDEA850001986B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BFE055876DFF3E955638268 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SignEasyAssignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FranklyMe.SignEasyAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +595,7 @@
 				845A1DA71BDEA850001986B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		845A1DA81BDEA850001986B0 /* Build configuration list for PBXNativeTarget "SignEasyAssignmentTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +604,7 @@
 				845A1DAA1BDEA850001986B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		845A1DAB1BDEA850001986B0 /* Build configuration list for PBXNativeTarget "SignEasyAssignmentUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +613,7 @@
 				845A1DAD1BDEA850001986B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
