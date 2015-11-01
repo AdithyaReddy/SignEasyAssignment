@@ -7,19 +7,16 @@
 //
 
 #import "LoginScreenViewController.h"
-#import "UIColor+ColorFunctions.h"
-#import "DocumentsViewController.h"
-#import "LoginAuthentication.h"
-#import <AFNetworking.h>
+
 
 
 @interface LoginScreenViewController () <UITextFieldDelegate>
 
+@property (nonatomic, strong) Document* document;
+
 @end
 
-@implementation LoginScreenViewController {
-    NSString* finalEncodedPasswordText;
-}
+@implementation LoginScreenViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -68,6 +65,13 @@
 
 - (IBAction)loginClicked:(id)sender {
     
+    [self.loginBtn setUserInteractionEnabled:NO];
+    [self.loginBtn setSelected:YES];
+    
+    [self.view makeToastActivity:CSToastPositionCenter];
+
+    self.usernameTextfield.text = @"signeasytask2@gmail.com";
+    
     if (self.usernameTextfield) {
         if ([self.usernameTextfield.text isEqualToString:@"signeasytask2@gmail.com"]) {
             NSLog(@"Login successful, good to go");
@@ -79,26 +83,20 @@
             NSString* password = @"signeasytask2";
             NSString* finalEncryptedString;
             finalEncryptedString = [LoginAuthentication encodeWithPassword:password];
-            finalEncodedPasswordText = finalEncryptedString;
-            NSLog(@"%@", finalEncryptedString);
-            
-            //----------------
-            
-            AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-            manager.responseSerializer = [AFJSONResponseSerializer serializer];
-            
-            [manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
-            [manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-            manager.requestSerializer = [AFJSONRequestSerializer serializer];
-            manager.requestSerializer = [AFHTTPRequestSerializer serializer];
-            [manager.requestSerializer setAuthorizationHeaderFieldWithUsername:self.usernameTextfield.text password:finalEncodedPasswordText];
             
             
-            [manager GET:@"https://api.getsigneasy.com/v4/files/" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                NSLog(@"JSON: %@", responseObject);
-            } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                NSLog(@"Error: %@", error);
-            }];            //---------------
+            [ApiManager getDocumentsWithUsername:self.usernameTextfield.text andPassword:finalEncryptedString onSuccess:^(id responseObject) {
+                
+                DocumentParser* docParser = [[DocumentParser alloc] init];
+                self.document = [[Document alloc] init];
+                self.document = [docParser getParsedDocumentData:responseObject];
+                [self gotoNextScreen];
+                
+            }
+            onFail:^(NSError *error) {
+                [self.view makeToast:@"Network connection problem!" duration:2.0 position:CSToastPositionCenter];
+            }];
+         
             
             
         }
@@ -108,9 +106,10 @@
 
 - (void) gotoNextScreen {
     DocumentsViewController* docsController = [[DocumentsViewController alloc] init];
-    docsController.title = @"Documents";
-    
+    docsController.title = @"All Documents";
+    [docsController setDataWithDocumentObject:self.document];
     UINavigationController *navCtrl = [[UINavigationController alloc] initWithRootViewController:docsController];
+    [self.view hideToastActivity];
     [self presentViewController:navCtrl animated:YES completion:nil];
 }
 

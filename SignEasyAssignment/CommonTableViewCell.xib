@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="KGk-i7-Jjw" customClass="CommonTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="385" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="gR4-a8-Vqz">
+                        <rect key="frame" x="0.0" y="8" width="385" height="133.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1Tm-cI-9Za">
+                            <size key="itemSize" width="130" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="gR4-a8-Vqz" secondAttribute="bottom" id="9qw-Ve-6jX"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gR4-a8-Vqz" secondAttribute="trailing" constant="-8" id="Bnp-97-Zd4"/>
+                    <constraint firstItem="gR4-a8-Vqz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="D5h-uC-qLS"/>
+                    <constraint firstItem="gR4-a8-Vqz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="QM2-o8-NOD"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="gR4-a8-Vqz" secondAttribute="leading" id="RJq-x1-hpP"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gR4-a8-Vqz" secondAttribute="bottom" id="VuP-cj-BAj"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gR4-a8-Vqz" secondAttribute="trailing" id="mX0-rs-kyZ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gR4-a8-Vqz" secondAttribute="trailing" id="oBj-jk-JWv"/>
+                    <constraint firstAttribute="topMargin" secondItem="gR4-a8-Vqz" secondAttribute="top" id="saf-Tj-S0B"/>
+                    <constraint firstItem="gR4-a8-Vqz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="ufC-Ay-Sp4"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="9qw-Ve-6jX"/>
+                        <exclude reference="QM2-o8-NOD"/>
+                        <exclude reference="RJq-x1-hpP"/>
+                        <exclude reference="mX0-rs-kyZ"/>
+                        <exclude reference="oBj-jk-JWv"/>
+                        <exclude reference="ufC-Ay-Sp4"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="gR4-a8-Vqz" id="4r5-ax-CD8"/>
+            </connections>
+            <point key="canvasLocation" x="243.5" y="238"/>
+        </tableViewCell>
+    </objects>
+</document>

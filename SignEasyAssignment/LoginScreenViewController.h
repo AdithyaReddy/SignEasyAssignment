@@ -7,6 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Document.h"
+#import "UIColor+ColorFunctions.h"
+#import "DocumentsViewController.h"
+#import "LoginAuthentication.h"
+#import <AFNetworking.h>
+#import "DocumentParser.h"
+#import "ApiManager.h"
+#import "UIView+Toast.h"
 
 @interface LoginScreenViewController : UIViewController
 
