@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		46F070929AC0BC6A5C5BCD0A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1EE5874C76ED20075608B6 /* libPods.a */; };
+		841240A01BF6E6CC00AC2D17 /* newfolder0.png in Resources */ = {isa = PBXBuildFile; fileRef = 8412409F1BF6E6CC00AC2D17 /* newfolder0.png */; settings = {ASSET_TAGS = (); }; };
+		841240A31BF6E6D800AC2D17 /* newfolder10.png in Resources */ = {isa = PBXBuildFile; fileRef = 841240A11BF6E6D800AC2D17 /* newfolder10.png */; settings = {ASSET_TAGS = (); }; };
+		841240A41BF6E6D800AC2D17 /* newfolder30.png in Resources */ = {isa = PBXBuildFile; fileRef = 841240A21BF6E6D800AC2D17 /* newfolder30.png */; settings = {ASSET_TAGS = (); }; };
+		841240A61BF6EA0300AC2D17 /* newfolder.ico in Resources */ = {isa = PBXBuildFile; fileRef = 841240A51BF6EA0300AC2D17 /* newfolder.ico */; settings = {ASSET_TAGS = (); }; };
+		841240A81BF6EA8500AC2D17 /* foldericon.ico in Resources */ = {isa = PBXBuildFile; fileRef = 841240A71BF6EA8500AC2D17 /* foldericon.ico */; settings = {ASSET_TAGS = (); }; };
 		845A1D7D1BDEA850001986B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A1D7C1BDEA850001986B0 /* main.m */; };
 		845A1D801BDEA850001986B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A1D7F1BDEA850001986B0 /* AppDelegate.m */; };
 		845A1D881BDEA850001986B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845A1D871BDEA850001986B0 /* Assets.xcassets */; };
@@ -57,6 +62,11 @@
 
 /* Begin PBXFileReference section */
 		2A1EE5874C76ED20075608B6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8412409F1BF6E6CC00AC2D17 /* newfolder0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newfolder0.png; sourceTree = "<group>"; };
+		841240A11BF6E6D800AC2D17 /* newfolder10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newfolder10.png; sourceTree = "<group>"; };
+		841240A21BF6E6D800AC2D17 /* newfolder30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newfolder30.png; sourceTree = "<group>"; };
+		841240A51BF6EA0300AC2D17 /* newfolder.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = newfolder.ico; sourceTree = "<group>"; };
+		841240A71BF6EA8500AC2D17 /* foldericon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = foldericon.ico; sourceTree = "<group>"; };
 		845A1D781BDEA850001986B0 /* SignEasyAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignEasyAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845A1D7C1BDEA850001986B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		845A1D7E1BDEA850001986B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = SignEasyAssignment/AppDelegate.h; sourceTree = "<group>"; };
@@ -179,6 +189,11 @@
 			isa = PBXGroup;
 			children = (
 				845A1D871BDEA850001986B0 /* Assets.xcassets */,
+				841240A71BF6EA8500AC2D17 /* foldericon.ico */,
+				841240A51BF6EA0300AC2D17 /* newfolder.ico */,
+				841240A11BF6E6D800AC2D17 /* newfolder10.png */,
+				841240A21BF6E6D800AC2D17 /* newfolder30.png */,
+				8412409F1BF6E6CC00AC2D17 /* newfolder0.png */,
 				84A33C111BE6087F00DF4313 /* green-doc.png */,
 				84A33C121BE6087F00DF4313 /* lightorange.png */,
 				84A33C131BE6087F00DF4313 /* orange-doc.png */,
@@ -403,12 +418,17 @@
 				84A33C151BE6087F00DF4313 /* lightorange.png in Resources */,
 				84A33C161BE6087F00DF4313 /* orange-doc.png in Resources */,
 				845A1DBE1BDEC826001986B0 /* DocumentsViewController.xib in Resources */,
+				841240A31BF6E6D800AC2D17 /* newfolder10.png in Resources */,
+				841240A41BF6E6D800AC2D17 /* newfolder30.png in Resources */,
 				845A1DB11BDEA93F001986B0 /* blurredScreen.png in Resources */,
+				841240A01BF6E6CC00AC2D17 /* newfolder0.png in Resources */,
 				845A1D8B1BDEA850001986B0 /* LaunchScreen.storyboard in Resources */,
 				845A1DB61BDEAF12001986B0 /* LoginScreenViewController.xib in Resources */,
+				841240A81BF6EA8500AC2D17 /* foldericon.ico in Resources */,
 				84A33C141BE6087F00DF4313 /* green-doc.png in Resources */,
 				84B65B3A1BE2B1A800A7640B /* CommonTableViewCell.xib in Resources */,
 				84B65B3F1BE2B60900A7640B /* DocumentCollectionViewCell.xib in Resources */,
+				841240A61BF6EA0300AC2D17 /* newfolder.ico in Resources */,
 				845A1D881BDEA850001986B0 /* Assets.xcassets in Resources */,
 				84B65B431BE2B91900A7640B /* info-image.png in Resources */,
 				84A33C1B1BE60D1D00DF4313 /* DetailsViewController.xib in Resources */,

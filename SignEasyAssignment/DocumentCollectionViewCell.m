@@ -14,7 +14,7 @@
 - (void)awakeFromNib {
     // Initialization code
     
-    UIImageView* backImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"orange-doc.png"]];
+    UIImageView* backImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"newfolder10.png"]];
     [self setBackgroundView:backImage];
     [self.layer setCornerRadius:5.0];
     

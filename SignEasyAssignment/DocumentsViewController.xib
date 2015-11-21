@@ -7,8 +7,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DocumentsViewController">
             <connections>
-                <outlet property="searchBar" destination="SN0-K8-JPc" id="BBB-ef-Eth"/>
-                <outlet property="searchbarDistanceFromTop" destination="DZz-Bh-aCb" id="0xZ-fH-CoT"/>
                 <outlet property="tableView" destination="I6b-JV-Kdp" id="1lZ-LQ-dHL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -18,15 +16,8 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="SN0-K8-JPc">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="44" id="xnm-nt-y0H"/>
-                    </constraints>
-                    <textInputTraits key="textInputTraits"/>
-                </searchBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="I6b-JV-Kdp">
-                    <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <outlet property="dataSource" destination="i5M-Pr-FkT" id="rNX-dW-LKs"/>
@@ -36,12 +27,8 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="SN0-K8-JPc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DZz-Bh-aCb"/>
                 <constraint firstItem="I6b-JV-Kdp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="E1B-Uh-OFK"/>
-                <constraint firstItem="SN0-K8-JPc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Tox-1u-wRW"/>
-                <constraint firstItem="I6b-JV-Kdp" firstAttribute="top" secondItem="SN0-K8-JPc" secondAttribute="bottom" id="Wzv-vd-4oE"/>
-                <constraint firstAttribute="trailing" secondItem="SN0-K8-JPc" secondAttribute="trailing" id="Z4A-1S-K6b"/>
-                <constraint firstItem="SN0-K8-JPc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aJP-M4-mF6"/>
+                <constraint firstItem="I6b-JV-Kdp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fwV-mu-cdt"/>
                 <constraint firstAttribute="bottom" secondItem="I6b-JV-Kdp" secondAttribute="bottom" id="i4C-FU-MXb"/>
                 <constraint firstAttribute="trailing" secondItem="I6b-JV-Kdp" secondAttribute="trailing" id="rC6-TJ-3j1"/>
             </constraints>

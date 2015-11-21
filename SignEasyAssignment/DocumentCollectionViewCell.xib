@@ -13,8 +13,9 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="120" height="136"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orange-doc.png" translatesAutoresizingMaskIntoConstraints="NO" id="KY0-Fn-QZ5">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newfolder0.png" translatesAutoresizingMaskIntoConstraints="NO" id="KY0-Fn-QZ5">
                         <rect key="frame" x="0.0" y="0.0" width="120" height="136"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNp-tD-xeX">
                         <rect key="frame" x="90" y="109" width="22" height="22"/>
@@ -62,6 +63,6 @@
     </objects>
     <resources>
         <image name="info-image.png" width="128" height="128"/>
-        <image name="orange-doc.png" width="220" height="174"/>
+        <image name="newfolder0.png" width="251" height="186"/>
     </resources>
 </document>
